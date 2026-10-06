@@ -5,12 +5,10 @@
 
   <p align="center">
     <a href="https://tiovene.github.io" target="_blank">
-      <img src="https://img.shields.io/badge/Acessar_Site-tiovene.github.io-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
-    </a>
+      <img src="https://img.shields.io/badge/Acessar_Site-tiovene.github.io-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo"/></a>
     <a href="https://wa.me/5585986794831" target="_blank">
-      <img src="https://img.shields.io/badge/WhatsApp-Conversar-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
-    </a>
-    <img src="https://img.shields.io/badge/Status-Online_%26_Ativo-10B981?style=for-the-badge" alt="Status" />
+      <img src="https://img.shields.io/badge/WhatsApp-Conversar-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
+    <img src="https://img.shields.io/badge/Status-Online_%26_Ativo-10B981?style=for-the-badge" alt="Status"/>
   </p>
 
   <p align="center">
