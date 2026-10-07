@@ -1121,3 +1121,335 @@ body {
     font-size: 2rem;
   }
 }
+
+
+/* =========================================================
+   ELEMENTOS ADICIONAIS: BANDEIRAS, CTAs & PÁGINAS LEGAIS
+   ========================================================= */
+
+/* Bandeira do Brasil SVG */
+.brazil-flag {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 3px;
+}
+
+/* CTA Intermediário em Destaque */
+.mid-cta-section {
+  padding: 4rem 0;
+}
+
+.mid-cta-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(99, 102, 241, 0.15) 50%, rgba(6, 182, 212, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(16, 185, 129, 0.1);
+}
+
+.mid-cta-content {
+  max-width: 650px;
+}
+
+.mid-cta-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #34d399;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.mid-cta-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+  color: var(--text-main);
+}
+
+.mid-cta-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.mid-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.mid-cta-note {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.pulse-hover:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Botão Flutuante Permanente do WhatsApp */
+.floating-whatsapp-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.floating-whatsapp-tooltip {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #f3f4f6;
+  font-size: 0.85rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  animation: floatTooltip 3s ease-in-out infinite;
+  white-space: nowrap;
+}
+
+@keyframes floatTooltip {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.floating-whatsapp-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #032b12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  animation: pulseWhatsapp 2.5s infinite;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulseWhatsapp {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Links do Rodapé & Licença */
+.footer-links-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.footer-link {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: #818cf8;
+  text-decoration: underline;
+}
+
+.license-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0.35rem;
+}
+
+.license-badge:hover {
+  background: rgba(245, 158, 11, 0.25);
+}
+
+/* =========================================================
+   ESTILOS ESPECÍFICOS DA PÁGINA DE PRIVACIDADE (LEGAL)
+   ========================================================= */
+.legal-main {
+  padding: 7rem 0 5rem 0;
+  max-width: 900px;
+}
+
+.legal-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.legal-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 1rem 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.legal-subtitle {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.legal-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.legal-jurisdictions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.jurisdiction-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  backdrop-filter: blur(12px);
+}
+
+.jurisdiction-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-main);
+}
+
+.jurisdiction-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.legal-body-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.legal-section {
+  margin-bottom: 2.5rem;
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 0.5rem;
+}
+
+.legal-section p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+
+.legal-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legal-section.highlight-box {
+  background: rgba(99, 102, 241, 0.08);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem 1.75rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.legal-section.highlight-box h2 {
+  color: #e0e7ff;
+  border-bottom-color: rgba(99, 102, 241, 0.25);
+}
+
+.legal-section.contact-box {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+}
+
+.legal-section.contact-box h2 {
+  color: #34d399;
+  border-bottom-color: rgba(16, 185, 129, 0.2);
+}
+
+.legal-footer-nav {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .mid-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.25rem 1.5rem;
+  }
+  
+  .mid-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .legal-jurisdictions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-body-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .floating-whatsapp-tooltip {
+    display: none;
+  }
+}

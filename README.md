@@ -54,7 +54,11 @@ tiovene.github.io/
 ├── index.html        # Estrutura semântica e acessível de todas as seções
 ├── style.css         # Design system, animações, glassmorphism e responsividade
 ├── script.js         # Lógica do desafio interativo, acordeão e menu mobile
+├── privacidade.html  # Termos de Uso e Política de Privacidade (LGPD, COPPA & CCPA)
+├── thumb.png         # Banner / Thumbnail para redes sociais (Open Graph)
+├── favicon.svg       # Ícone moderno para a aba do navegador
 ├── mat.jpg           # Recursos de imagem do projeto
+├── LICENSE           # Licença MIT
 └── README.md         # Documentação deste repositório
 ```
 
@@ -69,6 +73,7 @@ tiovene.github.io/
 | **JavaScript (ES6+)** | Manipulação do DOM, efeitos interativos e gerador de confetes |
 | **Google Fonts** | Tipografia profissional (*Plus Jakarta Sans* e *Fira Code*) |
 | **GitHub Pages** | Hospedagem estática contínua e gratuita |
+| **Licença MIT** | Código aberto e livre para educação |
 
 ---
 
@@ -99,3 +104,4 @@ tiovene.github.io/
 <div align="center">
   <sub>Construído com muito carinho e dedicação pelo <b>Tio Vené</b> 💚</sub>
 </div>
+
